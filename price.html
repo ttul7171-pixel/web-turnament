@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+
+function nextPage(){
+
+const params = new URLSearchParams(window.location.search);
+
+const mode=params.get("mode");
+
+var price=document.getElementById("price").value;
+
+window.location.href="time.html?mode="+mode+"&price="+price;
+
+}
+
+</script>
+
+</head>
+
+<body style="text-align:center">
+
+<h2>Select Entry Fee</h2>
+
+<select id="price">
+
+<option>₹10</option>
+<option>₹20</option>
+<option>₹50</option>
+<option>₹100</option>
+
+</select>
+
+<br><br>
+
+<button onclick="nextPage()">Next</button>
+
+</body>
+
+</html>

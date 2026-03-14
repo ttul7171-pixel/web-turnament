@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+
+function nextPage(){
+
+const params = new URLSearchParams(window.location.search);
+
+const mode=params.get("mode");
+const price=params.get("price");
+
+var time=document.getElementById("time").value;
+
+window.location.href="register.html?mode="+mode+"&price="+price+"&time="+time;
+
+}
+
+</script>
+
+</head>
+
+<body style="text-align:center">
+
+<h2>Select Match Time</h2>
+
+<select id="time">
+
+<option>10:00 AM</option>
+<option>10:30 AM</option>
+<option>11:00 AM</option>
+<option>12:00 PM</option>
+<option>2:00 PM</option>
+<option>4:00 PM</option>
+<option>6:00 PM</option>
+<option>8:00 PM</option>
+
+</select>
+
+<br><br>
+
+<button onclick="nextPage()">Next</button>
+
+</body>
+
+</html>

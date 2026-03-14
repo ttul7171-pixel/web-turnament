@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+
+function fillData(){
+
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("mode").value=params.get("mode");
+document.getElementById("price").value=params.get("price");
+document.getElementById("time").value=params.get("time");
+
+}
+
+</script>
+
+</head>
+
+<body onload="fillData()" style="text-align:center">
+
+<h2>Complete Registration</h2>
+
+<h3>Pay Entry Fee First</h3>
+
+<p>UPI ID: yourupi@upi</p>
+
+<form action="https://script.google.com/macros/s/AKfycbxeu_cAiDYT1LU0H4Fxzayds6Rj1qcDDIsCVloleepmfhiNt5q-jDYcBFBuyxi3tbZ2/exec" method="post">
+
+<input id="mode" name="mode" readonly><br><br>
+
+<input id="price" name="price" readonly><br><br>
+
+<input id="time" name="time" readonly><br><br>
+
+<input name="uid" placeholder="Free Fire UID"><br><br>
+
+<input name="name" placeholder="Player Name"><br><br>
+
+<input name="whatsapp" placeholder="WhatsApp Number"><br><br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</body>
+
+</html>
